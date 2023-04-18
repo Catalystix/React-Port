@@ -1,10 +1,9 @@
 import React from "react";
-import NavLinks from "./Navigation";
 
-export default function Footer() {
+export default function Resume() {
     return (
         <div className="header">
-          <h1>Drew Greenblatt</h1>
+          <h1>Resume</h1>
           <p></p>
           <ul className="parent">
             
