@@ -1,13 +1,14 @@
 
 import './App.css';
 import styles from './components/styles/styles.module.css';
-import Welcome from './components/Header';
+import About from './components/pages/About';
+import Home from './components/pages/Home';
 import NavLinks from './components/Navigation';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
+import Projects from './components/pages/Projects';
+import Resume from './components/pages/Resume';
+import Footer from './components/pages/Footer';
 import ContactForm from './components/Forms/ContactForm';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 // import React, { Background } from './components/Background';
 
@@ -33,16 +34,13 @@ function App() {
       <p className={styles.stars}></p>
       <p className={styles.img}></p>
 
-
-      <h2>
-
         <NavLinks />
-        <Welcome />
+        <Home />
         <Projects />
         <Resume />
         <ContactForm />
         <Footer />
-      </h2>
+      
     </div>
   );
 };
