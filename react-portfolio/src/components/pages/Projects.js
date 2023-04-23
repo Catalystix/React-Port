@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef, useEffect } from 'react';
 import data from "../carousel.json";
+import PW from "../images/Password-Gen.png"
 
 
 export default function Projects() {
