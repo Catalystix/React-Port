@@ -1,5 +1,5 @@
 import React from "react";
-import NavLinks from "../Navigation";
+
 
 export default function Footer() {
     return (

@@ -20,7 +20,9 @@ const ContactForm = () => {
   }
 
   return (
-    <form
+    <form style={{
+     
+    }}
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
       method="POST"

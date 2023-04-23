@@ -9,6 +9,8 @@ import Resume from './components/pages/Resume';
 import Footer from './components/pages/Footer';
 import ContactForm from './components/Forms/ContactForm';
 import { useEffect, useState } from 'react';
+import CurrentPage from './components/CurrentPage';
+import SocialMediaSidebar from './components/pages/Socials';
 
 // import React, { Background } from './components/Background';
 
@@ -34,12 +36,11 @@ function App() {
       <p className={styles.stars}></p>
       <p className={styles.img}></p>
 
-        <NavLinks />
-        <Home />
-        <Projects />
-        <Resume />
-        <ContactForm />
+      <div className=''>
+        <SocialMediaSidebar />
+        <CurrentPage />
         <Footer />
+       </div> 
       
     </div>
   );
