@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Rez from "../images/Rez.pdf";
 
 
 
@@ -41,7 +42,7 @@ const SocialMediaSidebar = () => {
       <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#00c914]">
         <a
           className="flex justify-between items-center w-full text-[#f6e5e5]"
-          href=""
+          href={Rez}
           target="_blank"
           download
         >

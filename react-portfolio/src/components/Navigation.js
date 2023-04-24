@@ -1,21 +1,8 @@
-// import React from "react";
 
-// export default function NavLinks() {
-//     return (
-//         <div className="navigation">
-//         <ul className="navLinks">
-//         <li>Home</li>
-//         <li>Projects</li>
-//         <li>Contact</li>
-//         <li>Resume</li>
-//       </ul>
-//       </div>
-//     );
-// }
 
 import React from 'react';
 
-export default function NavLinks({currentPage, handlePageChange}) {
+export default function NavLinks({currentPage, setCurrentPage}) {
 
 
   return (
@@ -26,23 +13,23 @@ export default function NavLinks({currentPage, handlePageChange}) {
         <div  >
           <ul class="font-medium  flex flex-col p-4 md:p-0 mt-4 border border-800 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#home"  onClick={() => handlePageChange('Home')}
+              <a href="#home"  onClick={() => setCurrentPage('Home')}
           className={currentPage === 'Home'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500 active:text-blue-500" aria-current="page">Home</a>
             </li>
             <li>
-              <a href="#about" onClick={() =>handlePageChange('About')}
+              <a href="#about" onClick={() =>setCurrentPage('About')}
           className={currentPage === 'About'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active:text-blue-500">About</a>
             </li>
             <li>
-              <a href="#projects"  onClick={() => handlePageChange('Projects')}
+              <a href="#projects"  onClick={() => setCurrentPage('Projects')}
           className={currentPage === 'Projects'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active:text-blue-500">Projects</a>
             </li>
             <li>
-              <a href="#resume"  onClick={() =>handlePageChange('Resume')}
+              <a href="#resume"  onClick={() =>setCurrentPage('Resume')}
           className={currentPage === 'Resume'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active:text-blue-500">Resume</a>
             </li>
             <li>
-              <a href="#contact"  onClick={() =>handlePageChange('Contact')}
+              <a href="#contact"  onClick={() =>setCurrentPage('Contact')}
           className={currentPage === 'Contact'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
             </li>
           </ul>

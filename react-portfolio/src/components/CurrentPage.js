@@ -10,8 +10,8 @@ import About from './pages/About';
 
 
 
-export default function CurrentPage() {
-    const [currentPage, setCurrentPage] = useState('Home');
+export default function CurrentPage({currentPage, setCurrentPage}) {
+    
     const renderPage = () => {
         if (currentPage === 'Home') {
             return <Home />;
@@ -28,11 +28,11 @@ export default function CurrentPage() {
         return <ContactForm />;
     };
 
-    const handlePageChange = (page) => setCurrentPage(page);
+    
 
     return(
         <div>
-            <NavLinks currentPage={currentPage} handlePageChange={handlePageChange} />
+            <NavLinks currentPage={currentPage} setCurrentPage={setCurrentPage} />
             {renderPage()} 
         </div>
     );

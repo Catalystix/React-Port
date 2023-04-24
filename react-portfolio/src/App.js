@@ -9,7 +9,7 @@ import Resume from './components/pages/Resume';
 import Footer from './components/pages/Footer';
 import ContactForm from './components/Forms/ContactForm';
 import { useEffect, useState } from 'react';
-import CurrentPage from './components/CurrentPage';
+import Page from './components/CurrentPage';
 import SocialMediaSidebar from './components/pages/Socials';
 
 // import React, { Background } from './components/Background';
@@ -18,6 +18,7 @@ import SocialMediaSidebar from './components/pages/Socials';
 
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('Home');
   useEffect(() => {
     if (document) {
       const stylesheet = document.createElement("link");
@@ -38,8 +39,8 @@ function App() {
 
       <div className=''>
         <SocialMediaSidebar />
-        <CurrentPage />
-        <Footer />
+        <Page currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
        </div> 
       
     </div>

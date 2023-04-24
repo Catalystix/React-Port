@@ -1,8 +1,9 @@
 import React from "react";
 import NavLinks from "../Navigation";
+import ContactForm from "../Forms/ContactForm";
 
 
-export default function Footer() {
+export default function Footer({currentPage, setCurrentPage}) {
     return (
         
 
@@ -12,14 +13,14 @@ export default function Footer() {
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-300 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            <a href="#about" onClick={() =>setCurrentPage('About')}class="mr-4 hover:underline md:mr-6 ">About</a>
         </li>
         
         <li>
             <a href="https://www.linkedin.com/in/drew-greenblatt33/" class="mr-4 hover:underline md:mr-6">LinkedIn</a>
         </li>
         <li>
-            <a href="#" className={NavLinks} class="hover:underline">Contact</a>
+            <a href="#contact"  onClick={() =>setCurrentPage('Contact')} class="hover:underline">Contact</a>
         </li>
     </ul>
     </div>
