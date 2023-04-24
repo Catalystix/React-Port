@@ -9,7 +9,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialMediaSidebar = () => {
   return (
-    <div className="hidden lg:flex fixed flex-col top-[35%] left-6">
+    <div className="hidden lg:flex fixed flex-col top-[35%] left-4">
     <ul>
       <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-blue-600">
         <a
@@ -17,7 +17,7 @@ const SocialMediaSidebar = () => {
           href="https://www.linkedin.com/in/drew-greenblatt33/"
           target="_blank"
         >
-          LinkedIn <FaLinkedin size={25} />
+          LinkedIn <FaLinkedin size={40} />
         </a>
       </li>
       <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#333333]">
@@ -26,7 +26,7 @@ const SocialMediaSidebar = () => {
           href="https://github.com/catalystix"
           target="_blank"
         >
-          GitHub <FaGithub size={25} />
+          GitHub <FaGithub size={40} />
         </a>
       </li>
       <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#690303]">
@@ -35,7 +35,7 @@ const SocialMediaSidebar = () => {
           href="mailto:dcode.green@gmail.com"
           target="_blank"
         >
-          Email <HiOutlineMail size={25} />
+          Email <HiOutlineMail size={40} />
         </a>
       </li>
       <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#00c914]">
@@ -45,7 +45,7 @@ const SocialMediaSidebar = () => {
           target="_blank"
           download
         >
-          Resume <BsFillPersonLinesFill size={25} />
+          Resume <BsFillPersonLinesFill size={40} />
         </a>
       </li>
     </ul>

@@ -6,7 +6,7 @@ import PW from "../images/Password-Gen.png"
 
 export default function Projects() {
     return (
-        <div className="header">
+        <div className="grid place-content-center">
           <h1>Projects</h1>
           
           <ul className="parent">

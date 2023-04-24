@@ -20,6 +20,7 @@ const ContactForm = () => {
   }
 
   return (
+    <div class="py-8 px-4 mx-auto max-w-screen-xl grid place-content-center lg:py-16">
     <form style={{
      
     }}
@@ -63,6 +64,7 @@ const ContactForm = () => {
         </button>
       </div>
     </form>
+    </div>
   );
 };
 
