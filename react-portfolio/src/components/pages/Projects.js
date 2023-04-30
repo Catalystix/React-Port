@@ -66,7 +66,7 @@ export default function Projects() {
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
-        <div className="flex items-center  m-auto flex-col w-4/5 top-4 justify-center py-2 text-black" >{Projects[currentIndex].title}
+        <div className="flex items-center  m-auto flex-col w-4/5 top-4 justify-center py-2 font-bold font-serif text-2xl text-black" >{Projects[currentIndex].title}
           <div className="flex flex-row pb-6">
 
 
@@ -77,7 +77,7 @@ export default function Projects() {
               </div>
             ))}
           </div>
-          <a href={Projects[currentIndex].Link} target="_blank" className="opacity-0 inline break-all text-gray-950">LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
+          <a href={Projects[currentIndex].Link} target="_blank" className="opacity-0 text-sm inline break-all text-gray-950">LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
             LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
             LinkslinkslinksLinkslinksLinkslinkslinksLinkslinkslinkslinksLinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinkslinkslinksLinkslinks
             linksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinks
