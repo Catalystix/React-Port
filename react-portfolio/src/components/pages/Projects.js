@@ -1,62 +1,97 @@
 import React from "react";
 import { useState, useRef, useEffect } from 'react';
-import data from "../carousel.json";
+import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import { RxDotFilled } from "react-icons/rx";
 import PW from "../images/Password-Gen.png";
 import Quiz from "../images/Quiz-list.jpg";
-import Gist from "../images/teaching gist.jpg";
+import Gist from "../images/teaching-gist.jpg";
 import Text from "../images/text-editor.jpg";
 import Health from "../images/healthHeart.jpg"
 
 
 export default function Projects() {
-    return (
-        
-<div id="default-carousel" class="relative w-full" data-carousel="slide">
-    
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={PW} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
-        </div>
-        
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={Quiz} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
-        </div>
-       
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={Gist} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
-        </div>
-        
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={Text} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
-        </div>
-       
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src={Health} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
-        </div>
-    </div>
-    
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
-  
-    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-</div>
+  const Projects = [
+    {
+      title: "Password Generator",
+      url: PW,
+      Link: 'https://catalystix.github.io/Password-Generator-3.3/'
+    },
+    {
+      title: "Quiz Game",
+      url: Quiz,
+      Link: 'https://catalystix.github.io/The-Quiz-Game/'
 
-      );
+    },
+    {
+      title: "Regex Tutorial",
+      url: Gist,
+      Link: 'https://gist.github.com/Catalystix/61436609d241fdd37a964ee3ca577bb8'
+    },
+    {
+      title: "Text Editor",
+      url: Text,
+      Link: 'https://pwa-text-editor-33.herokuapp.com/'
+    },
+    {
+      title: "Wellness Watcher",
+      url: Health,
+      Link: 'https://wait-watchers.herokuapp.com/'
+    }
+  ];
+
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? Projects.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === Projects.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
+  return (
+    <div className="max-w-[1400px] h-[780px] flex place-content-center  w-full m-auto mt-24 py-12 px-4 relative group">
+      <div style={{ backgroundImage: `url(${Projects[currentIndex].url})` }} className="w-1/2 h-3/5 flex-wrap justify-center rounded-2xl flex bg-center bg-cover duration-500">
+        {/* left arrow*/}
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer" >
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        </div>
+        {/* right arrow */}
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
+        <div className="flex items-center  m-auto flex-col w-4/5 top-4 justify-center py-2">
+          <div className="flex flex-row pb-6">
+
+
+            {Projects.map((slide, slideIndex) => (
+              <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className="text-2xl text-black cursor-pointer">
+
+                <RxDotFilled />
+              </div>
+            ))}
+          </div>
+          <a href={Projects[currentIndex].Link} target="_blank" className="opacity-0 inline break-all text-gray-950">LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
+            LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
+            LinkslinkslinksLinkslinksLinkslinkslinksLinkslinkslinkslinksLinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinkslinkslinksLinkslinks
+            linksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinks
+            linkslinksLinkslinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinksLinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinks
+          </a>
+
+        </div>
+
+        <div className="text-black"> {Projects[currentIndex].title}
+        </div>
+      </div>
+    </div>
+
+
+
+  );
 }

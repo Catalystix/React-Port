@@ -39,6 +39,7 @@ function App() {
 
       <div className=''>
         <SocialMediaSidebar />
+        
         <Page currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
        </div> 

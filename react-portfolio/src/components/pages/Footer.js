@@ -1,6 +1,5 @@
 import React from "react";
-import NavLinks from "../Navigation";
-import ContactForm from "../Forms/ContactForm";
+
 
 
 export default function Footer({currentPage, setCurrentPage}) {

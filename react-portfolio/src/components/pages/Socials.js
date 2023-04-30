@@ -10,7 +10,7 @@ import Rez from "../images/Rez.pdf";
 
 const SocialMediaSidebar = () => {
   return (
-    <div className="hidden lg:flex fixed flex-col top-[35%] left-4">
+    <div className="hidden z-10 lg:flex fixed flex-col top-[35%] left-4">
     <ul>
       <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-blue-600">
         <a
@@ -39,9 +39,9 @@ const SocialMediaSidebar = () => {
           Email <HiOutlineMail size={40} />
         </a>
       </li>
-      <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#00c914]">
+      <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-[#f3f3f3]">
         <a
-          className="flex justify-between items-center w-full text-[#f6e5e5]"
+          className="flex justify-between items-center w-full text-[#0a0a0a]"
           href={Rez}
           target="_blank"
           download
