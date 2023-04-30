@@ -11,6 +11,7 @@ import ContactForm from './components/Forms/ContactForm';
 import { useEffect, useState } from 'react';
 import Page from './components/CurrentPage';
 import SocialMediaSidebar from './components/pages/Socials';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import React, { Background } from './components/Background';
 
@@ -39,11 +40,16 @@ function App() {
 
       <div className=''>
         <SocialMediaSidebar />
-        
-        <Page currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+
+        <Page currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
-       </div> 
-      
+        <BrowserRouter>
+          <Routes>
+            
+          </Routes>
+        </BrowserRouter>
+      </div>
+
     </div>
   );
 };

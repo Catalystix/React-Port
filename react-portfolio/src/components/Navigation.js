@@ -24,10 +24,10 @@ export default function NavLinks({currentPage, setCurrentPage}) {
               <a href="#projects"  onClick={() => setCurrentPage('Projects')}
           className={currentPage === 'Projects'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active:text-blue-500">Projects</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#resume"  onClick={() =>setCurrentPage('Resume')}
           className={currentPage === 'Resume'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent active:text-blue-500">Resume</a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact"  onClick={() =>setCurrentPage('Contact')}
           className={currentPage === 'Contact'  ? 'nav-link active' : 'nav-link'} class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-800 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>

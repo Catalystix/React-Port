@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
+const FORM_ENDPOINT = ""; // - fill on the later step
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);

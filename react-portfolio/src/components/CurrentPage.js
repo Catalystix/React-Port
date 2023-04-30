@@ -19,9 +19,9 @@ export default function CurrentPage({currentPage, setCurrentPage}) {
         if (currentPage === 'Projects') {
             return <Projects />;
         }
-        if (currentPage === 'Resume') {
-            return <Resume />;
-        }
+        // if (currentPage === 'Resume') {
+        //     return <Resume />;
+        // }
         if (currentPage === 'About') {
             return <About />;
         }
