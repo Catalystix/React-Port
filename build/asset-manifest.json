@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-port/static/css/main.4019c876.css",
+    "main.js": "/react-port/static/js/main.0231c2bf.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-port/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Rez.pdf": "/react-port/static/media/Rez.f5a17d2c1b62e3158bbd.pdf",
+    "static/media/Password-Gen.png": "/react-port/static/media/Password-Gen.8c4663b2b6500204d4ab.png",
+    "static/media/space.jpg": "/react-port/static/media/space.378a60b9118e46b415f8.jpg",
+    "static/media/moon3.jpg": "/react-port/static/media/moon3.c97d5cbfbf899a632f2d.jpg",
+    "static/media/teaching-gist.jpg": "/react-port/static/media/teaching-gist.9b91395c26a2a2015368.jpg",
+    "static/media/text-editor.jpg": "/react-port/static/media/text-editor.2ddad8a76adadc171d0d.jpg",
+    "static/media/Quiz-list.jpg": "/react-port/static/media/Quiz-list.9b72e2b987205c03953e.jpg",
+    "static/media/healthHeart.jpg": "/react-port/static/media/healthHeart.4278ec8737007a0705d6.jpg",
+    "index.html": "/react-port/index.html",
+    "main.4019c876.css.map": "/react-port/static/css/main.4019c876.css.map",
+    "main.0231c2bf.js.map": "/react-port/static/js/main.0231c2bf.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-port/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4019c876.css",
+    "static/js/main.0231c2bf.js"
+  ]
+}
