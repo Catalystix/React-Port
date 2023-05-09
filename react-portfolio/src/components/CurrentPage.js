@@ -3,8 +3,7 @@ import styles from './styles/styles.module.css';
 import Home from './pages/Home';
 import NavLinks from './Navigation';
 import Projects from './pages/Projects';
-import Resume from './pages/Resume';
-import Footer from './pages/Footer';
+
 import ContactForm from './Forms/ContactForm';
 import About from './pages/About';
 

@@ -6,7 +6,8 @@ import PW from "../images/Password-Gen.png";
 import Quiz from "../images/Quiz-list.jpg";
 import Gist from "../images/teaching-gist.jpg";
 import Text from "../images/text-editor.jpg";
-import Health from "../images/healthHeart.jpg"
+import Health from "../images/healthHeart.jpg";
+import Cosmos from "../images/space.jpg";
 
 
 export default function Projects() {
@@ -36,6 +37,12 @@ export default function Projects() {
       title: "Wellness Watcher",
       url: Health,
       Link: 'https://wait-watchers.herokuapp.com/'
+    },
+    {
+      title: 'Comsos- Coming Soon',
+      url: Cosmos,
+      Link: 'Coming Soon'
+
     }
   ];
 
@@ -77,13 +84,15 @@ export default function Projects() {
               </div>
             ))}
           </div>
-          <a href={Projects[currentIndex].Link} target="_blank" className="opacity-0 text-sm inline break-all text-gray-950">LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
-            LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinks
-            LinkslinkslinksLinkslinksLinkslinkslinksLinkslinkslinkslinksLinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinkslinkslinksLinkslinks
-            linksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinks
-            linkslinksLinkslinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinksLinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinks
-          </a>
-
+          <a href={Projects[currentIndex].Link} target="_blank" className="opacity-0 text-sm inline break-all text-gray-950">LinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinks
+          linkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinks
+          linksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinksLinkslinkslinksLinkslinkslinkslinksLinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinks
+          linksLinkslinkslinksLinkslinkslinksLinkslinkslinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinks
+          linkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinkslinkslinksLinksLinks
+          linkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinksLinkslinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinksLinkslinkslinksLinkslinksLinkslinkslinksLinksLinkslinks
+          linksLinksLinkslinkslinksLinks
+          </a> 
+              {/* the other option here was to just simply raise the Z-index but I was already committed with limited time on my hands */}
         </div>
 
         
