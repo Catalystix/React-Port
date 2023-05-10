@@ -18,6 +18,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
+
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
   useEffect(() => {
@@ -25,7 +26,9 @@ function App() {
       const stylesheet = document.createElement("link");
       stylesheet.rel = "stylesheet";
       stylesheet.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
-
+<BrowserRouter basename={process.env.PUBLIC_URL}>
+     <App />
+   </BrowserRouter>
       document.head.appendChild(stylesheet);
     }
   }, []);
@@ -37,17 +40,14 @@ function App() {
       <p className={styles.twinkling}></p>
       <p className={styles.stars}></p>
       <p className={styles.img}></p>
-
+      
       <div className=''>
         <SocialMediaSidebar />
 
         <Page currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        <BrowserRouter>
-          <Routes>
-         
-          </Routes>
-        </BrowserRouter>
+      
+        
       </div>
 
     </div>
