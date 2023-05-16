@@ -13,6 +13,11 @@ import Cosmos from "../images/space.jpg";
 export default function Projects() {
   const Projects = [
     {
+      title: 'The Daily Clawsmic',
+      url: Cosmos,
+      Link: 'https://cosmic-gallary.herokuapp.com/'
+    },
+    {
       title: "Password Generator",
       url: PW,
       Link: 'https://catalystix.github.io/Password-Generator-3.3/'
@@ -37,12 +42,6 @@ export default function Projects() {
       title: "Wellness Watcher",
       url: Health,
       Link: 'https://wait-watchers.herokuapp.com/'
-    },
-    {
-      title: 'Comsos- Coming Soon',
-      url: Cosmos,
-      Link: 'Coming Soon'
-
     }
   ];
 
